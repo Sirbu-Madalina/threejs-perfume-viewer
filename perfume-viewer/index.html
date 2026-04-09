@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>perfume-viewer</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+<div id="heroOverlay" class="overlay">
+  <div class="brand">Luxury Perfume</div>
+
+  <div class="heroContent">
+    <h1>Luxury<br />Perfume Configurator</h1>
+    <p>
+      Explore the bottle in 3D and customize its color with a clean,
+      interactive product experience.
+    </p>
+
+    <button id="startBtn" class="startBtn">
+      Start now
+      <span>↓</span>
+    </button>
+  </div>
+</div>
+
+<div id="topBar" class="topBar hidden">
+  <div class="topBarBrand">Luxury Perfume</div>
+
+  <div class="topBarActions">
+    <button id="exitBtn" class="exitBtn">Exit</button>
+  </div>
+</div>
+
+<div id="customizerBar" class="customizerBar hidden">
+  <p class="customizerTitle">Choose a color</p>
+
+  <div class="swatches">
+    <button class="swatch active" data-color="#f2c6d2" style="background:#f2c6d2;"></button>
+    <button class="swatch" data-color="#b7d7e8" style="background:#b7d7e8;"></button>
+    <button class="swatch" data-color="#d7c6f2" style="background:#d7c6f2;"></button>
+    <button class="swatch" data-color="#c7e8c2" style="background:#c7e8c2;"></button>
+    <button class="swatch" data-color="#f4d6a0" style="background:#f4d6a0;"></button>
+    <button class="swatch" data-color="#4b3f72" style="background:#4b3f72;"></button>
+  </div>
+
+  <p id="presetDescription" class="presetDescription">
+    Rose — soft, floral, elegant.
+  </p>
+
+  <button id="resetViewBtn" class="resetViewBtn">Reset view</button>
+  
+</div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
